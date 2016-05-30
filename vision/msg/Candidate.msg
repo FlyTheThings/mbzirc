@@ -1,0 +1,2 @@
+geometry_msgs/PoseWithCovariance pose
+int16 color
