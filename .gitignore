@@ -4,5 +4,13 @@ CMakeScripts
 Makefile
 cmake_install.cmake
 install_manifest.txt
+
+# Build folders.
 /gcs/build
 /vision/build
+
+# Qt-creator config files.
+*.user
+
+# Temporarly files.
+*~
