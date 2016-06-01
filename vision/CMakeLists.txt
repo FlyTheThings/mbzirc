@@ -70,15 +70,12 @@ if(GRVCMBZIRC_USE_ROS)
 				rospy
    				std_msgs
 				geometry_msgs
-   				message_generation
+				grvc_quadrotor_com
 			)
-	# --- Compile ROS messages --- 
-	add_message_files(FILES Candidate.msg CandidateList.msg)
-	generate_messages(DEPENDENCIES std_msgs geometry_msgs)
 
 	catkin_package(
 		INCLUDE_DIRS include
-		CATKIN_DEPENDS roscpp message_runtime)
+		CATKIN_DEPENDS roscpp)
 
 	include_directories(${catkin_INCLUDE_DIRS})
 endif(GRVCMBZIRC_USE_ROS)
